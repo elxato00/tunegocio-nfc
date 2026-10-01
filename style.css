@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #111827;
+    background: #ffffff;
+}
+
+header {
+    height: 80px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e7eb;
+    background: white;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #374151;
+    font-size: 15px;
+}
+
+.boton {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.hero {
+    min-height: 650px;
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background: #f8fafc;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.etiqueta {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero-text > p:not(.etiqueta) {
+    font-size: 19px;
+    line-height: 1.6;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.grande {
+    padding: 15px 28px;
+}
+
+.hero-card {
+    display: flex;
+    justify-content: center;
+}
+
+.nfc-card {
+    width: 350px;
+    height: 220px;
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #374151
+    );
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+.card-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.estrellas {
+    color: #facc15;
+    font-size: 25px;
+}
+
+.card-text {
+    font-size: 15px;
+}
+
+.nfc-symbol {
+    font-size: 30px;
+    text-align: right;
+    color: #d1d5db;
+}
+
+section {
+    padding: 90px 10%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.pasos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.paso {
+    padding: 30px;
+    border-radius: 15px;
+    background: #f8fafc;
+}
+
+.paso span {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.paso h3 {
+    margin: 15px 0 10px;
+    font-size: 21px;
+}
+
+.paso p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.producto {
+    width: 330px;
+    padding: 35px;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    position: relative;
+    background: white;
+}
+
+.producto h3 {
+    font-size: 23px;
+}
+
+.precio {
+    font-size: 38px;
+    font-weight: 800;
+    margin: 20px 0 10px;
+}
+
+.producto p {
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.producto ul {
+    list-style: none;
+    margin: 25px 0;
+}
+
+.producto li {
+    margin: 13px 0;
+}
+
+.producto button {
+    width: 100%;
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background: #1d4ed8;
+}
+
+.destacado {
+    border: 2px solid #2563eb;
+}
+
+.popular {
+    position: absolute;
+    top: -14px;
+    right: 20px;
+    background: #2563eb;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.faq {
+    max-width: 750px;
+    margin: auto;
+}
+
+.pregunta {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 25px 0;
+}
+
+.pregunta h3 {
+    margin-bottom: 10px;
+}
+
+.pregunta p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+footer {
+    padding: 50px 10%;
+    background: #111827;
+    color: white;
+    text-align: center;
+}
+
+footer .logo {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-top: 10px;
+    color: #9ca3af;
+}
+
+@media (max-width: 800px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 5%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-card {
+        width: 100%;
+    }
+
+    .nfc-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    section {
+        padding: 70px 5%;
+    }
+
+    .pasos {
+        grid-template-columns: 1fr;
+    }
+
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        width: 100%;
+        max-width: 380px;
+    }
+}
+.campo {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+.campo input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.boton-formulario {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
